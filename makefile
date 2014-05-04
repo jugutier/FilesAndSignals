@@ -10,7 +10,9 @@ $(COMPILE):
 server:$(COMPILE)
 	@gcc -o server.o server/main.c files.c
 	@./server.o
+	@rm server.o
 
 client:$(COMPILE)
 	@gcc -o client.o client/main.c files.c
 	@./client.o
+	@rm client.o

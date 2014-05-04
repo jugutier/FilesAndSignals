@@ -13,7 +13,6 @@ int main(void){
 
 void request_handler(int n){
 	printf("client request arrived\n");
-	printf("%s\n",getRequest(getpid())) ;
-	//process request
-	//respond(msg, receiver);
+	printf("%s\n",getLastRequest()) ;
+	//respond("chau", receiver);
 }

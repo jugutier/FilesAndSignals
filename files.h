@@ -21,12 +21,16 @@ int respond(char * msg, pid_t receiver);
 **/
 char * getResponse(pid_t sender);
 /**
-* get last request from file queue for sender
+* get last request from last client to server
 **/
-char * getRequest(pid_t sender);
+char * getLastRequest();
 
 pid_t getServerPid();
 
 void setServerPid(pid_t srvrPid);
+
+pid_t getClientPid();
+
+void setClientPid(pid_t srvrPid);
 
 #endif
