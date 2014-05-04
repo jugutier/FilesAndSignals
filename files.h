@@ -25,4 +25,8 @@ char * getResponse(pid_t sender);
 **/
 char * getRequest(pid_t sender);
 
+pid_t getServerPid();
+
+void setServerPid(pid_t srvrPid);
+
 #endif
